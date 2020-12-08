@@ -22,7 +22,7 @@ class CreatePostService {
                 body
             });
 
-            console.log(postObject);
+            // console.log(postObject);
 
             await postsRepository.save(postObject);
 

@@ -22,15 +22,11 @@ class AudioFile {
 
   @Column()
   post_id: number;
-  
-//=====
+
+//===== FOREIGN KEY
 @OneToOne( type => Post)
 @JoinColumn({ name: 'post_id' })
 post: Post;
-  //========
-  // @OneToOne(type => Post) 
-  // @JoinColumn() 
-  // post: Post;
 
 
   @CreateDateColumn()

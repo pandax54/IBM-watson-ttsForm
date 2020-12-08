@@ -1,4 +1,3 @@
-// import { getCustomRepository } from 'typeorm';
 import AppError from '../erros/AppError';
 import Audio from '../models/Audio';
 import AudiosRepository from '../repository/AudiosRepository';
@@ -21,7 +20,7 @@ class CreateAudioFileService {
                 post_id
             });
 
-            console.log(audioObject);
+            // console.log(audioObject);
 
             return audioObject;
 

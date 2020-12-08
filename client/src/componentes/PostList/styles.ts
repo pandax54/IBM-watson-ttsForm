@@ -85,9 +85,27 @@ export const ButtonPost = styled.button`
         fill: #fff;
     }
 
+    svg.loading {
+        margin-left: 0;
+        animation-name: spin;
+        animation-duration: 5000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; 
+
+    }
+
     &:hover {
         background: ${shade(0.1, '#f6435d')};
     }
+
+    @keyframes spin {
+        from {
+        transform:rotate(0deg);
+        }
+        to {
+        transform:rotate(360deg);
+        }
+} 
 `
 
 
