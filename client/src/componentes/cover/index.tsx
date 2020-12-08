@@ -30,7 +30,6 @@ const Cover: React.FC = () => {
         xhttp.onreadystatechange = function () {
             if (this.readyState === 4 && this.status === 200) {
 
-                // let response = this.responseText;
             }
         };
         let data = {
@@ -71,47 +70,7 @@ const Cover: React.FC = () => {
         };
         xhttp.send();
 
-        // api.get('/').then(response => {
-        //     console.log("the posts are", response.data)
-        //     const posts = response.data
-        //     setPosts(posts)
-        // })
-    }, [handleAddPost])
-
-
-    // async function handleAddPost(e: FormEvent) {
-    //     e.preventDefault()
-
-    //     let xhttp = new XMLHttpRequest();
-    //     xhttp.open("POST", "http://localhost:3333", true);
-    //     xhttp.setRequestHeader("Content-Type", "application/json");
-    //     xhttp.onreadystatechange = function () {
-    //         if (this.readyState === 4 && this.status === 200) {
-
-    //             // let response = this.responseText;
-    //         }
-    //     };
-    //     let data = {
-    //         author: inputAuthor,
-    //         title: inputTitle,
-    //         body: inputBody
-    //     }
-    //     xhttp.send(JSON.stringify(data));
-
-    //     setInputAuthor("")
-    //     setInputTitle("")
-    //     setInputBody("")
-
-
-    //     // const response = await api.post('/', {
-    //     //     author: inputAuthor,
-    //     //     title: inputTitle,
-    //     //     body: inputBody
-    //     // });
-
-    //     // const post: PostData = response.data
-
-    // }
+    }, [handleAddPost, posts])
 
 
     return (

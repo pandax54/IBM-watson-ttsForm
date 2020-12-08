@@ -1,17 +1,9 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
-import background from '../../assets/background.jpg';
 
 export const Container = styled.div`
     display: flex;
     width: 95%;
-    /* height: 420px; */
-    /* background: rgba(0, 0, 0, 0.4) url('${background}'); */
-    /* background-blend-mode: darken; */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
-    /* background-position: center center;  */
-    /* flex-direction: row; */
     min-width: 780px;
     padding-bottom: 100px;
 `

@@ -52,7 +52,7 @@ You can use docker to setup the database:
 example:
 docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -p portlocal:port -d mysql:version
 
-$ docker run -n watson -e MYSQL_ROOT_PASSWORD=watson -e MYSQL_DATABASE=watson -e MYSQL_USER=[your user name here!] -e MYSQL_PASSWORD=watson -d -p 3307:3306 mysql:5.7
+$ docker run --name watson -e MYSQL_ROOT_PASSWORD=watson -e MYSQL_DATABASE=watson -e MYSQL_USER=[your user name here!] -e MYSQL_PASSWORD=watson -d -p 3307:3306 mysql:5.7
 
 ```
 
